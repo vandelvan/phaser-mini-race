@@ -44,31 +44,31 @@ function preload() {
   this.load.image("centerR", "assets/Tiles/centerR.png");
   this.load.image("rightR", "assets/Tiles/rightR.png");
   //Carga los obstaculos posibles
-  this.load.image("ob1","assets/Cars/car_black_1.png");
-  this.load.image("ob2","assets/Cars/car_black_2.png");
-  this.load.image("ob3","assets/Cars/car_black_3.png");
-  this.load.image("ob4","assets/Cars/car_black_4.png");
-  this.load.image("ob5","assets/Cars/car_black_5.png");
-  this.load.image("ob6","assets/Cars/car_blue_1.png");
-  this.load.image("ob7","assets/Cars/car_blue_2.png");
-  this.load.image("ob8","assets/Cars/car_blue_3.png");
-  this.load.image("ob9","assets/Cars/car_blue_4.png");
-  this.load.image("ob10","assets/Cars/car_blue_5.png");
-  this.load.image("ob11","assets/Cars/car_green_1.png");
-  this.load.image("ob12","assets/Cars/car_green_2.png");
-  this.load.image("ob13","assets/Cars/car_green_3.png");
-  this.load.image("ob14","assets/Cars/car_green_4.png");
-  this.load.image("ob15","assets/Cars/car_green_5.png");
-  this.load.image("ob16","assets/Cars/car_red_1.png");
-  this.load.image("ob17","assets/Cars/car_red_2.png");
-  this.load.image("ob18","assets/Cars/car_red_3.png");
-  this.load.image("ob19","assets/Cars/car_red_4.png");
-  this.load.image("ob20","assets/Cars/car_red_5.png");
-  this.load.image("ob21","assets/Cars/car_yellow_1.png");
-  this.load.image("ob22","assets/Cars/car_yellow_2.png");
-  this.load.image("ob23","assets/Cars/car_yellow_3.png");
-  this.load.image("ob24","assets/Cars/car_yellow_4.png");
-  this.load.image("ob25","assets/Cars/car_yellow_5.png");
+  this.load.image("ob0","assets/Cars/car_black_1.png");
+  this.load.image("ob1","assets/Cars/car_black_2.png");
+  this.load.image("ob2","assets/Cars/car_black_3.png");
+  this.load.image("ob3","assets/Cars/car_black_4.png");
+  this.load.image("ob4","assets/Cars/car_black_5.png");
+  this.load.image("ob5","assets/Cars/car_blue_1.png");
+  this.load.image("ob6","assets/Cars/car_blue_2.png");
+  this.load.image("ob7","assets/Cars/car_blue_3.png");
+  this.load.image("ob8","assets/Cars/car_blue_4.png");
+  this.load.image("ob9","assets/Cars/car_blue_5.png");
+  this.load.image("ob10","assets/Cars/car_green_1.png");
+  this.load.image("ob11","assets/Cars/car_green_2.png");
+  this.load.image("ob12","assets/Cars/car_green_3.png");
+  this.load.image("ob13","assets/Cars/car_green_4.png");
+  this.load.image("ob14","assets/Cars/car_green_5.png");
+  this.load.image("ob15","assets/Cars/car_red_1.png");
+  this.load.image("ob16","assets/Cars/car_red_2.png");
+  this.load.image("ob17","assets/Cars/car_red_3.png");
+  this.load.image("ob18","assets/Cars/car_red_4.png");
+  this.load.image("ob19","assets/Cars/car_red_5.png");
+  this.load.image("ob20","assets/Cars/car_yellow_1.png");
+  this.load.image("ob21","assets/Cars/car_yellow_2.png");
+  this.load.image("ob22","assets/Cars/car_yellow_3.png");
+  this.load.image("ob23","assets/Cars/car_yellow_4.png");
+  this.load.image("ob24","assets/Cars/car_yellow_5.png");
 }
 
 function create() {

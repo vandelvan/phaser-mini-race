@@ -29,6 +29,8 @@ var player;
 var obstacles;
 var lockText;
 var score = 0;
+//velocidad de obstaculos
+var v = 500;
 
 function preload() {
   //Toma un color aleatorio para la moto del usuario
@@ -88,7 +90,7 @@ function create() {
   var customBounds = new Phaser.Geom.Rectangle(0, -120, 1000, 1000);
   obstacles = this.physics.add.group({
     key: "obstacles",
-    velocityY: 500,
+    velocityY: v,
     customBoundsRectangle: customBounds,
     collideWorldBounds: true,
   });
@@ -173,7 +175,6 @@ function updateLockText(isLocked) {
 
 var x = 0;
 var t = 120;
-var v = 500;
 function update() {
   updateLockText();
   if (x % t == 0) {
@@ -202,6 +203,5 @@ function restart() {
   score = 0;
   t = 120;
   v = 500;
-  obstacles.setVelocityY(v);
   game = new Phaser.Game(config);
 }

@@ -11,3 +11,4 @@ Instructions:
 - Avoid as many obstacles as you can!
 - The obstacles start appearing more often and faster every time!
 
+Assets from [Kenney](https://kenney.nl/assets/racing-pack)

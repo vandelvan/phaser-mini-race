@@ -198,5 +198,7 @@ function gameover() {
 function restart() {
   document.getElementById("text").style = "display:none;";
   score = 0;
+  t = 120;
+  obstacules.velocityY=500;
   game = new Phaser.Game(config);
 }

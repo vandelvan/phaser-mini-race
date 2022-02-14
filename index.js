@@ -26,7 +26,7 @@ var config = {
 
 var game = new Phaser.Game(config);
 var player;
-var obstacules;
+var obstacles;
 var lockText;
 var score = 0;
 
@@ -86,8 +86,8 @@ function create() {
   }
 
   var customBounds = new Phaser.Geom.Rectangle(0, -120, 1000, 1000);
-  obstacules = this.physics.add.group({
-    key: "obstacules",
+  obstacles = this.physics.add.group({
+    key: "obstacles",
     velocityY: 500,
     customBoundsRectangle: customBounds,
     collideWorldBounds: true,
@@ -97,7 +97,7 @@ function create() {
   player = this.physics.add.sprite(400, 300, "player");
 
   //Colisión entre jugador y obstaculo
-  this.physics.add.collider(player, obstacules, function (p, o) {
+  this.physics.add.collider(player, obstacles, function (p, o) {
     gameover();
   });
 
@@ -173,11 +173,13 @@ function updateLockText(isLocked) {
 
 var x = 0;
 var t = 120;
+var v = 500;
 function update() {
   updateLockText();
   if (x % t == 0) {
-    obstacules.create(Math.floor(Math.random() * 800), 0, "ob"+Math.floor(Math.random()*25));
-    obstacules.velocityY*=1.5;
+    obstacles.create(Math.floor(Math.random() * 800), 0, "ob"+Math.floor(Math.random()*25));
+    v++;
+    obstacles.setVelocityY(v);
     t--;
   }
   score++;
@@ -199,6 +201,7 @@ function restart() {
   document.getElementById("text").style = "display:none;";
   score = 0;
   t = 120;
-  obstacules.velocityY=500;
+  v = 500;
+  obstacles.setVelocityY(v);
   game = new Phaser.Game(config);
 }
